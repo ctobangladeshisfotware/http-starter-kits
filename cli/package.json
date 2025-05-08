@@ -1,0 +1,22 @@
+{
+  "name": "@xhttp/cli",
+  "version": "1.0.0",
+  "main": "bin/index.js",
+  "bin": "xhttp",
+  "type": "commonjs",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --outfile=bin/index.js",
+    "watch": "esbuild src/index.ts --bundle --outfile=bin/index.js --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.18.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "winston": "^3.10.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": ""
+}
